@@ -20,14 +20,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20.x' 
-          cache: 'npm
+          node-version: '20.x'
+          cache: 'npm'  # Closing quote added here
 
       - name: Install dependencies
         run: npm install
 
       - name: Run tests
         run: npm test
-        
+
       - name: Build app (optional)
         run: npm run build
