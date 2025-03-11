@@ -1,0 +1,16 @@
+image: node:20 
+
+stages:
+  - install
+  - test
+  - save
+
+install_dep:
+  stage: install
+  script:
+    - npm install
+
+run_tests:
+  stage: test
+  script:
+    - npm test
