@@ -24,6 +24,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: Documents/tp_nodejs_CI_github
 
       - name: Run tests
         run: npm test
+        working-directory: Documents/tp_nodejs_CI_github
